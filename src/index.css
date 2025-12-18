@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* กำหนดสีพื้นหลัง Default ไว้ที่ CSS เลย เพื่อป้องกันหน้าขาวแวบหนึ่งก่อนโหลด */
+body {
+  background-color: #0f172a; /* สี dark slate (slate-900) */
+  color: #f8fafc; /* สีขาว (slate-50) */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ปรับแต่ง Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
